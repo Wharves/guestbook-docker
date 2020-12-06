@@ -19,8 +19,6 @@ docker-compose -v
 ```
 git clone git@github.com:monjara/symfony-docker.git
 ```
-### Dockerfile docker-compose.yml default.conf 内のプロジェクト名変更
-各ファイル内のsymfony-appを任意のプロジェクト名に変更
 ### docker 立ち上げ
 ```
 docker-compose up -d

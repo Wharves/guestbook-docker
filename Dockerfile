@@ -6,4 +6,4 @@ RUN apt-get update \
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
-WORKDIR /var/www/html/symfony-app
+WORKDIR /var/www/html/guestbook

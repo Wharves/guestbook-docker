@@ -9,7 +9,7 @@ services:
       # ホストのdefault.confを同期
       - ./default.conf:/etc/nginx/conf.d/default.conf
       # ホストの./myappフォルダを同期
-      - ./symfony-app:/var/www/html/symfony-app
+      - ./guestbook:/var/www/html/guestbook
     depends_on:
       - php
 
@@ -17,7 +17,7 @@ services:
     build: .
     volumes:
       # ホストの./myappフォルダを同期
-      - ./symfony-app:/var/www/html/symfony-app
+      - ./guestbook:/var/www/html/guestbook
 
   db:
     image: mysql:8.0
@@ -33,4 +33,4 @@ services:
       # 設定必須、rootパスワード
       - MYSQL_ROOT_PASSWORD=rootpass
       # この設定はオプション、イメージの起動時に作成されるデータベース名
-      - MYSQL_DATABASE=symfonydb
+      - MYSQL_DATABASE=guestbookdb
