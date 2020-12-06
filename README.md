@@ -17,7 +17,7 @@ docker-compose -v
 ## 作業手順
 ### プロジェクトをクローン
 ```
-git clone git@github.com:monjara/symfony-docker.git
+git clone git@github.com:monjara/guestbook-docker.git
 ```
 ### docker 立ち上げ
 ```
